@@ -61,7 +61,7 @@ fclose($fp);
       font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
     }
 
-    th {
+    p {
       color: #666;
       font-size: 1.2rem;
       text-align: center;
@@ -71,16 +71,10 @@ fclose($fp);
 
 <body>
   <main>
-    <table>
-      <thead>
-        <tr>
-          <th>////////////// 申請一覧 //////////////</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?= $str ?>
-      </tbody>
-    </table>
+    <p>////////////// 申請一覧 //////////////</p>
+    <div>
+      <?= $str ?>
+    </div>
   </main>
 
   <script>

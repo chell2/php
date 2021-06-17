@@ -30,14 +30,16 @@
 			<a href="shinsei_input.php">入力画面</a> /
 			<a href="shinsei_read.php">一覧画面（閲覧用）</a> /
 			<a href="shinsei_rewrite.php">一覧画面（編集用）</a> /
-			<a href="image_post.php">受取写真</a>
+			<a href="image_read.php">受取写真</a>
 		</div>
 	</header>
 	<main>
 		<div class="wrapIframe">
-			<iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="shinsei_read.php">
+			<iframe id="txtRead" title="txtRead" width="300" height="200" src="shinsei_read.php">
 			</iframe>
-			<iframe id="inlineFrameExample" title="Inline Frame Example" width="300" height="200" src="image_post.php">
+			<iframe id="csvRewrite" title="csvRewrite" width="300" height="200" src="shinsei_rewrite.php">
+			</iframe>
+			<iframe id="imageRead" title="imageRead" width="300" height="200" src="image_read.php">
 			</iframe>
 		</div>
 		<div class="wrapChartL">
@@ -64,7 +66,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 
 	<script type="text/javascript">
-		// Chart1：ドーナッツ（被災作物内訳）
+		// Chart1：ドーナッツ（被災品目内訳）
 		var ctx1 = document.getElementById('myChart1').getContext('2d');
 		var myChart = new Chart(ctx1, {
 			type: 'doughnut',
@@ -77,7 +79,7 @@
 					'その他'
 				],
 				datasets: [{
-					label: 'My First Dataset',
+					label: '品目別件数',
 					data: [300, 50, 100, 20, 10],
 					backgroundColor: [
 						'rgb(255, 99, 132)',
@@ -103,7 +105,7 @@
 					'北部'
 				],
 				datasets: [{
-					label: 'My First Dataset',
+					label: '地区別件数',
 					data: [11, 16, 7, 3],
 					backgroundColor: [
 						'rgb(255, 99, 132)',

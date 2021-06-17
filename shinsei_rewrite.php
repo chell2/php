@@ -58,7 +58,7 @@ $output = null;
 		<table>
 			<thead>
 				<tr>
-					<th>申請データ</th>
+					<th>申請一覧</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -94,8 +94,7 @@
 <body>
   <header>
     <div>
-      <a href="shinsei_graph.php">確認画面</a> /
-      <a href="image_post.php">受取写真</a>
+      <a href="shinsei_graph.php">確認画面</a>
     </div>
   </header>
   <main>
@@ -121,7 +120,7 @@
             echo "\" name=\"reqNo\" id=\"reqNo\"></dd>";
             ?>
             <dt>罹災原因:</dt>
-            <dd><input type="date" name="cause">の<br>大雨/台風によるもの</dd>
+            <dd><input type="date" name="cause" value="2020-07-06">の<br>大雨/台風によるもの</dd>
             <dt>氏名:</dt>
             <dd><input type="text" name="name" id="name"></dd>
             <dt>ふりがな:</dt>
@@ -150,7 +149,7 @@
                 <option value="その他園芸">その他園芸作物</option>
               </select></dd>
             <dt>圃場住所:</dt>
-            <dd><input type="text" name="fieldAdd"></dd>
+            <dd><input type="text" name="fieldAdd" value="久留米市"></dd>
             <dt>面積:</dt>
             <dd><input type="number" min="0" step="0.01" name="area">a</dd>
             <dt>浸水深:</dt>
@@ -202,7 +201,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
   </script>
   <!-- ふりがなのスクリプト -->
-  <script src="JS/jquery.autoKana.js" type="text/javascript"></script>
+  <script src="jquery.autoKana.js" type="text/javascript"></script>
   <script>
     $(function() {
       $.fn.autoKana('#name', '#kana');

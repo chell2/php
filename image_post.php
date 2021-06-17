@@ -3,7 +3,12 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>sample</title>
+	<title>画像送信結果</title>
+	<style>
+		p {
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
@@ -37,6 +42,7 @@
 			// }
 
 			?></p>
+		<p><a href="shinsei_input.php">入力画面に戻る</a></p>
 	</main>
 </body>
 
